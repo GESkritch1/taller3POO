@@ -50,7 +50,8 @@ public class Cliente {
         System.out.println("(2) eliminar pedido");
         System.out.println("(3) ver estado del pedido");
         System.out.println("(4) salir ");
-        int opcionelegida = sc.nextInt();
+        int opcionelegida;
+        opcionelegida = sc.nextInt();
 
         switch (opcionelegida) {
             case 1:
