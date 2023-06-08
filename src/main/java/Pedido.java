@@ -22,5 +22,12 @@ public class Pedido {
         // TODO - implement Pedido.guardarPedido
         throw new UnsupportedOperationException();
     }
+    private void agregarPedido() {
 
+
+    }
+    private void iniciarPedido() {
+        Mesero mesero1 = new Mesero();
+
+    }
 }

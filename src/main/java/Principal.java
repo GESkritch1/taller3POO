@@ -1,13 +1,17 @@
+import java.util.Scanner;
+
 public class Principal {
 
     private void usarMetodosClientemenu() {
-        // TODO - implement Principal.usarMetodosClientemenu
-        throw new UnsupportedOperationException();
+        Cliente.hacerPedido();
+
     }
 
+
+
     public void main() {
-        // TODO - implement Principal.main
-        throw new UnsupportedOperationException();
+        usarMetodosClientemenu();
     }
+
 
 }
