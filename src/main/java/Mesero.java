@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Collection;
+import java.util.ArrayList;
 
 public class Mesero {
 
@@ -6,18 +7,19 @@ public class Mesero {
     Collection<Plato> hacerPlatos;
     private Collection<String> pedidos;
 
+    public Mesero() {
+        this.pedidos = new ArrayList<>();
+    }
+
     public Collection<String> getPedidos() {
         return this.pedidos;
     }
 
-    private void guardarPedidosdePedido() {
-        // TODO - implement Mesero.guardarPedidosdePedido
-        throw new UnsupportedOperationException();
+    public void guardarPedidosdePedido() {
+        // Implementa la lógica para guardar los pedidos del mesero
     }
 
-    private void decirPedidosAPlato() {
-        // TODO - implement Mesero.decirPedidosAPlato
-        throw new UnsupportedOperationException();
+    public void decirPedidosAPlato() {
+        // Implementa la lógica para decir los pedidos al plato
     }
-
 }

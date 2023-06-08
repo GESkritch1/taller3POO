@@ -15,17 +15,28 @@ public class Cliente {
     }
 
     public static void agregarPedido(Pedido pedido) {
+        System.out.println("Ingrese los elementos del pedido (separados por coma):");
+        String elementos = sc.nextLine();
+        String[] elementosArray = elementos.split(",");
+        for (String elemento : elementosArray) {
+            pedido.getElPedido().add(elemento.trim());
+        }
 
     }
 
     public static void eliminarPedido(Pedido pedido) {
-        // TODO - implement Cliente.eliminarPedido
-        throw new UnsupportedOperationException();
+        System.out.println("Ingrese el elemento a eliminar:");
+        String elemento = sc.nextLine();
+        if (pedido.getElPedido().contains(elemento)) {
+            pedido.getElPedido().remove(elemento);
+            System.out.println("Elemento eliminado del pedido.");
+        } else {
+            System.out.println("El elemento no existe en el pedido.");
+        }
     }
 
     public static void verEstado(Pedido pedido) {
-        // TODO - implement Cliente.verEstado
-        throw new UnsupportedOperationException();
+        System.out.println("Estado del pedido: " + pedido.getEstadoPedido());
     }
 
     private static void salirLocal() {

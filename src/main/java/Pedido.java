@@ -1,10 +1,15 @@
-import java.util.*;
+import java.util.Collection;
+import java.util.HashSet;
 
 public class Pedido {
-
     Mesero guardarPedido;
     private Collection<String> elPedido;
     private int estadoPedido;
+
+    public Pedido() {
+        this.elPedido = new HashSet<>();
+        this.estadoPedido = 0;
+    }
 
     public Collection<String> getElPedido() {
         return this.elPedido;
@@ -18,16 +23,11 @@ public class Pedido {
         return this.estadoPedido;
     }
 
-    private void guardarPedido() {
-        // TODO - implement Pedido.guardarPedido
-        throw new UnsupportedOperationException();
+    public void guardarPedido() {
+        // Implementa la lógica para guardar el pedido
     }
-    private void agregarPedido() {
 
-
-    }
-    private void iniciarPedido() {
-        Mesero mesero1 = new Mesero();
-
+    public void iniciarPedido() {
+        // Implementa la lógica para iniciar el pedido
     }
 }

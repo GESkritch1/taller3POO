@@ -1,17 +1,15 @@
 import java.util.Scanner;
 
 public class Principal {
+    public static void main(String[] args) {
+        usarMetodosClientemenu();
+    }
 
-    private void usarMetodosClientemenu() {
+    private static void usarMetodosClientemenu() {
         Cliente.hacerPedido();
 
     }
 
-
-
-    public void main() {
-        usarMetodosClientemenu();
-    }
 
 
 }
